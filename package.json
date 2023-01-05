@@ -39,6 +39,5 @@
   },
   "devDependencies": {
     "gh-pages": "^4.0.0"
-  },
-  "homepage": "https://Gilberter.github.io/react-project-gilberter"
+  }
 }
