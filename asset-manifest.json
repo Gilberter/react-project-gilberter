@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.648d239d.css",
-    "main.js": "/static/js/main.9696e0fc.js",
-    "index.html": "/index.html",
-    "main.648d239d.css.map": "/static/css/main.648d239d.css.map",
-    "main.9696e0fc.js.map": "/static/js/main.9696e0fc.js.map"
+    "main.css": "/react-project-gilberter/static/css/main.648d239d.css",
+    "main.js": "/react-project-gilberter/static/js/main.9696e0fc.js",
+    "index.html": "/react-project-gilberter/index.html",
+    "main.648d239d.css.map": "/react-project-gilberter/static/css/main.648d239d.css.map",
+    "main.9696e0fc.js.map": "/react-project-gilberter/static/js/main.9696e0fc.js.map"
   },
   "entrypoints": [
     "static/css/main.648d239d.css",
