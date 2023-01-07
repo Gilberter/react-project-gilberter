@@ -24,7 +24,7 @@ function TodoForm() {
     return (
         <form >
             <label>Escribe perra hpta</label>
-            <textarea value={newTodo} onChange={onChangeNewTodo}  placeholder="Escribe Tu Todo" />
+            <textarea value={newTodo} onChange={onChangeNewTodo}  placeholder="Aqui puedes escribir tu TO-DO (Tus tareas o actividades que deseas completar, recuerda que puedes eliminar y completar tus TO-DO.)" />
             <div>
                 <button type="button" onClick={onCancel}>
                     Cancelar

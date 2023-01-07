@@ -26,7 +26,6 @@ const defaultTodos = [
             localStorage.setItem(ItemName, JSON.stringify([]));
             parsedItem = [];
           }else {
-  
             parsedItem = JSON.parse(localStorageItem);
           } 
           setItem(parsedItem);
@@ -35,7 +34,7 @@ const defaultTodos = [
           setError(true);
         }
       }, 1000);
-    }),[];
+    });
     
   
     
