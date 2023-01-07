@@ -17,6 +17,7 @@ function TodoForm() {
     const onAdd = (event) => {
         event.preventDefault();
         addTodo(newTodo)
+        setOpen(false)
     }
 
     console.log(newTodo);

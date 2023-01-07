@@ -48,6 +48,7 @@ function TodoProvider(props) {
 
   if (!searchValue.length >= 1) {
     searchedTodos = todos;
+    
   } else {
     searchedTodos = todos.filter(todo => {
       const todoText = todo.text.toLowerCase();

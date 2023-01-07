@@ -14,7 +14,8 @@ import './App.css'
 
 function AppUI() {
 
-    const {error, loading, searchedTodos, toDeleteeTodos, toCompleteTodos, open, setOpen} = React.useContext(TodoContext)
+    const {error, loading, searchedTodos, toDeleteeTodos, toCompleteTodos, open, setOpen,totalTodos} = React.useContext(TodoContext)
+
     return (
         <React.Fragment>
             <TodoCounter /> 
@@ -23,7 +24,7 @@ function AppUI() {
                 <TodoList>
                 {error && <p>Hubo un error, no te preocupes ya lo estamos solucionando</p>}
                 {loading && <p>Estamos Cargando, no cierres la pagina...</p>}
-                {(!loading && !searchedTodos.lenght) && <ul className="ul-list-user"> <li><p>Crea tu primer tarea para hacer!!! </p></li> <li> <p>Haz en el boton con signo de abajo a la derecha para crear tu primer lista de cosas por hacer :3</p></li></ul>  }
+                {(!loading && totalTodos == 0) && <ul className="ul-list-user"> <li><p>Crea tu primer tarea para hacer!!! </p></li> <li> <p>Haz en el boton con signo de abajo a la derecha para crear tu primer lista de cosas por hacer :3</p></li></ul>  }
                 {searchedTodos.map(todo => (
                     <TodoItem key={todo.text} text={todo.text} completed={todo.completed} onDelete={()=> toDeleteeTodos(todo.text)} onComplete={() => toCompleteTodos(todo.text)}  />
                 ))}
